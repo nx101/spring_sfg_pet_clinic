@@ -19,7 +19,7 @@
 
     <groupId>com.rvlt</groupId>
     <artifactId>spring_sfg_pet_clinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>spring_sfg_pet_clinic</name>
     <description>Pet Clinic Project</description>
 

@@ -19,7 +19,7 @@
 
     <groupId>com.rvlt</groupId>
     <artifactId>spring_sfg_pet_clinic</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>spring_sfg_pet_clinic</name>
     <description>Pet Clinic Project</description>
 
@@ -40,7 +40,6 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals> <!-- will not deploy -->
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
 
@@ -59,7 +58,7 @@
 
 
     <scm> <!-- required for maven release plugin, scm:git:<sit ssh version> -->
-        <developerConnection>scm:git:git@github.com:nx101/spring_sfg_pet_clinic.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/nx101/spring_sfg_pet_clinic.git</developerConnection>
         <tag>spring_sfg_pet_clinic-0.0.3</tag>
     </scm>
 

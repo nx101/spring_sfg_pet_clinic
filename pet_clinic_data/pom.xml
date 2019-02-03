@@ -50,6 +50,8 @@
     </dependencies>
 
 
+
+    <!-- To compile this module as a jar -->
     <build>
         <plugins>
             <plugin>

@@ -15,8 +15,9 @@
 
         <!-- web module depends on data module -->
         <dependency>
-            <groupId>com.rvlt</groupId>
             <artifactId>pet_clinic_data</artifactId>
+            <groupId>com.rvlt</groupId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
 

@@ -59,7 +59,7 @@
     </build>
 
 
-    <scm> <!-- required for maven release plugin -->
+    <scm> <!-- required for maven release plugin, scm:git:<sit ssh version> -->
         <developerConnection>scm:git:git@github.com:nx101/spring_sfg_pet_clinic.git</developerConnection>
         <tag>HEAD</tag>
     </scm>

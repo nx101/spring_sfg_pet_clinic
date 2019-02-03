@@ -1,4 +1,4 @@
-package com.rvlt.spring_sfg_pet_clinic.model;
+package com.rvlt.sfgpetclinic.model;
 
 public class PetType {
 

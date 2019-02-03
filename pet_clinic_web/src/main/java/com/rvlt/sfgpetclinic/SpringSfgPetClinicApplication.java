@@ -1,4 +1,4 @@
-package com.rvlt.spring_sfg_pet_clinic;
+package com.rvlt.sfgpetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

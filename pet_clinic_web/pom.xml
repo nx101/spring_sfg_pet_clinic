@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spring_sfg_pet_clinic</artifactId>
         <groupId>com.rvlt</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.3-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -17,7 +17,7 @@
         <dependency>
             <artifactId>pet_clinic_data</artifactId>
             <groupId>com.rvlt</groupId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.3-SNAPSHOT</version>
         </dependency>
 
 

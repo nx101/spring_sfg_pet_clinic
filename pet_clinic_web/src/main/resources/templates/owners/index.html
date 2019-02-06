@@ -5,7 +5,34 @@
     <title>Owner List</title>
 </head>
 <body>
+<!-- InteliJ comment to see class by th var name : -->
+<!--/*@thymesVar id="owner" type="com.rvlt.sfgpetclinic.model.Owner"*/-->
 <h1 th:text="'List of owners'">list of owners ...</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="owner : ${owners}">
+        <td th:text="${owner?.id}">1</td>
+        <td th:text="${owner?.firstName}">firstname</td>
+        <td th:text="${owner?.lastName}">lastname</td>
+    </tr>
+    </tbody>
+</table>
 
 </body>
 </html>
+
+<!--
+
+var?.field?.otherfield is the save navifation operator
+prints only if not null
+https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/expressions.html#expressions-operator-safe-navigation
+
+-->

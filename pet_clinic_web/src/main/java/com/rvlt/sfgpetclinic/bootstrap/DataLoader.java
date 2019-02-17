@@ -1,6 +1,7 @@
 package com.rvlt.sfgpetclinic.bootstrap;
 
 import com.rvlt.sfgpetclinic.model.Owner;
+import com.rvlt.sfgpetclinic.model.Pet;
 import com.rvlt.sfgpetclinic.model.PetType;
 import com.rvlt.sfgpetclinic.model.Vet;
 import com.rvlt.sfgpetclinic.services.OwnerService;
@@ -8,6 +9,8 @@ import com.rvlt.sfgpetclinic.services.PetTypeService;
 import com.rvlt.sfgpetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
 
 // CommandLineRunner interface indicates this class's run method
 // to be called when context is ready
@@ -42,12 +45,36 @@ public class DataLoader implements CommandLineRunner {
         Owner owner1 = new Owner();
         owner1.setFirstName("Yoda");
         owner1.setLastName("Greenthing");
+        owner1.setAddress("Dagoba Swamp");
+        owner1.setCity("Dagoba City");
+        owner1.setTelephone("1-800-do-or-do-not");
         ownerService.save(owner1);
+
+        Pet pet1 = new Pet();
+        pet1.setName("Pita");
+        pet1.setPetType(savedDogPetType);
+        pet1.setBirthDate(LocalDate.now());
+        pet1.setOwner(owner1);
+        owner1.getPets().add(pet1);
+
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Luke");
         owner2.setLastName("Skywalker");
+        owner2.setAddress("Renovated Jedi Temple");
+        owner2.setCity("New Jedaya");
+        owner2.setTelephone("1-800-join-the-light-side");
         ownerService.save(owner2);
+
+        Pet pet2 = new Pet();
+        pet2.setName("Chukaka");
+        pet2.setPetType(savedCatPetType);
+        pet2.setBirthDate(LocalDate.now());
+        pet2.setOwner(owner2);
+        owner2.getPets().add(pet2);
+
+
+
 
         System.out.println("Owners Loaded.");
 
